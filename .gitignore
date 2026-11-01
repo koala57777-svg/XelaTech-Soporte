@@ -1,0 +1,10 @@
+## Carpetas de compilación
+[Bb]in/
+[Oo]bj/
+
+## Archivos y configuraciones de Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
