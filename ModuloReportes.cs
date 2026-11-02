@@ -13,12 +13,12 @@ namespace XelaTechSoporte
     {
         public static void IniciarSubmenu(SistemaSoporte sistema)
         {
-            OpcionMenuPrincipal = 0;
+            int opcionReportes = 0;
             do
             {
-                OpcionMenuPrincipal = ValidarNumerico(1, OpcionesMenuReportes, 9);
+                opcionReportes = ValidarNumerico(1, OpcionesMenuReportes, 9);
                 Console.Clear();
-                switch (OpcionMenuPrincipal)
+                switch (opcionReportes)
                 {
                     case 1:
                         ReporteSolicitudesEnEspera(sistema);
@@ -51,7 +51,7 @@ namespace XelaTechSoporte
                         ErroOpcionNoValida();
                         break;
                 }
-            } while (OpcionMenuPrincipal != 9);
+            } while (opcionReportes != 9);
         }
 
         public static void ReporteSolicitudesEnEspera(SistemaSoporte sistema)
